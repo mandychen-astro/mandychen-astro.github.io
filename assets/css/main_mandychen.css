@@ -1767,8 +1767,8 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			width: 85%;
-			margin: 0 0 2em 0;
+			width: 100%;
+			/*margin: 0 0 2em 0;*/
 		}
 
 		.image.featured {
@@ -2583,7 +2583,7 @@ input, select, textarea {
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 14pt;
+				font-size: 12pt;
 			}
 
 			h2 {
