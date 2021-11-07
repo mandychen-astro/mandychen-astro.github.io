@@ -1715,15 +1715,15 @@
 			width: 100%;
 		}
 
-		.image.avatar58 {
-			width: 58px;
-			height: 58px;
+		.image.avatar48 {
+			width: 48px;
+			height: 48px;
 			background: #f00;
 		}
 
-			.image.avatar58 img {
-				width: 58px;
-				height: 58px;
+			.image.avatar48 img {
+				width: 48px;
+				height: 48px;
 			}
 
         .image.fitsimple {
