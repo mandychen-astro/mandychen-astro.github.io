@@ -214,6 +214,65 @@
 			font-weight: 500;
 		}
 
+/* Moments of Joy (photo rows; each photo keeps its own shape) */
+
+	.joy-month {
+		font-size: 0.9em;
+		font-weight: 500;
+		color: var(--muted);
+		margin-bottom: 1em;
+	}
+
+	.joy-grid {
+		--row: 170px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 18px 12px;
+	}
+
+		.joy-photo {
+			--ar: 1.5;
+			flex: calc(var(--ar)) 1 calc(var(--ar) * var(--row));
+			max-width: calc(var(--ar) * 360px);
+			min-width: 0;
+			margin: 0;
+		}
+
+			.joy-photo a {
+				display: block;
+				border: 0;
+				border-radius: 8px;
+				overflow: hidden;
+			}
+
+			.joy-photo img {
+				display: block;
+				width: 100%;
+				height: auto;
+				aspect-ratio: var(--ar);
+				object-fit: cover;
+				transition: transform 0.3s ease;
+			}
+
+				.joy-photo a:hover img {
+					transform: scale(1.03);
+				}
+
+			.joy-photo figcaption {
+				font-size: 0.82em;
+				line-height: 1.4;
+				color: var(--muted);
+				margin-top: 0.5em;
+			}
+
+	@media screen and (max-width: 960px) {
+
+		.joy-grid {
+			--row: 140px;
+		}
+
+	}
+
 /* Sidebar */
 
 	#header {
